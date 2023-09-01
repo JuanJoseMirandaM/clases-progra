@@ -1,17 +1,14 @@
+import java.util.Scanner;
+
 /**
  * @author Juan Jose Miranda
  */
 public class Main {
     public static void main(String[] args) {
-//        int x = 12;
-//        int y = 5;
-        double x = 12;
-        double y = 5;
-
-        System.out.println(x + y);
-        System.out.println(x - y);
-        System.out.println(x * y);
-        System.out.println(x / y);
-        System.out.println(x % y);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("introduzca dos numeros para sumarlos");
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        System.out.println(x+y);
     }
 }
