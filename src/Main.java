@@ -6,19 +6,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("introduzca un lenguaje de programacion");
-        String x = sc.nextLine();
-        switch (x) {
-            case "java":
-                System.out.println("java$$$");
-                break;
-            case "python":
-                System.out.println("python!!!");
-                break;
-            default:
-                System.out.println("no tengo ese lenguaje");
-                break;
-        }
-
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double h = Math.sqrt(a * a + b * b);
+        System.out.format("%.2f", h);
     }
 }
