@@ -7,12 +7,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
-        System.out.println(s.charAt(0));
-        System.out.println(s.indexOf('l'));
         System.out.println(s.length());
-
-        for (int i = 0; i < s.length(); i++) {
-            System.out.println(s.charAt(i));
-        }
+        System.out.println(s.toLowerCase());
+        System.out.println(s.toUpperCase());
+        System.out.println(s.equals("HOlaA"));
     }
 }
