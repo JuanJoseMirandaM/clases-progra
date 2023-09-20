@@ -6,15 +6,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < n; i++) {
-            int x = sc.nextInt();
-            for (int j = 1; j <= x; j++) {
-                if (x % j == 0) {
-                    System.out.print(j + " ");
-                }
+            String s = sc.nextLine();
+            String inv = "";
+            for (int j= 0; j < s.length(); j++) {
+                inv = s.charAt(j) + inv;
             }
-            System.out.println();
+            System.out.println(inv);
         }
     }
 }
