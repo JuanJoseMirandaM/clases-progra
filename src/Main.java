@@ -6,17 +6,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s1 = sc.nextLine();
-        String s2 = "";
-
-        for (int i = 0; i < s1.length(); i++) {
-            s2 = s1.charAt(i) + s2;
-        }
-
-        if (s1.equals(s2)) {
-            System.out.println("es palindromo");
-        } else {
-            System.out.println("no es palindromo");
+        int n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            int x = sc.nextInt();
+            for (int j = 1; j <= x; j++) {
+                if (x % j == 0) {
+                    System.out.print(j + " ");
+                }
+            }
+            System.out.println();
         }
     }
 }
