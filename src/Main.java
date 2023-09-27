@@ -6,17 +6,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner lee = new Scanner(System.in);
-        String n = lee.nextLine();
-        int t = Integer.parseInt(n);
-        for (int i = 0; i < t; i++) {
-            String a = lee.nextLine();
-            String c = "";
-            int r = a.length();
-            for (int j = r - 1; j >= 0; j--) {
-                char x = a.charAt(j);
-                c = c + x;
-            }
-            System.out.println(c);
+        int n = lee.nextInt();
+        int x = 1;
+        int y = -1;
+
+        for (int i = 1; i <= n; i++) {
+            x = x * i;
+            System.out.println(x * y);
+            y = -y;
         }
     }
 }
