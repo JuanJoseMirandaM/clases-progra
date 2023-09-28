@@ -5,17 +5,21 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-        Scanner lee = new Scanner(System.in);
-        int n = lee.nextInt();
-        int[] vector = new int[n];
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese t");
+        int t = scanner.nextInt();
+        for (int i = 0; i < t; i++) {
+            int panes = scanner.nextInt();
+            int bollos = scanner.nextInt();
+//            if (panes < bollos) {
+//                System.out.println(panes);
+//            } else {
+//                System.out.println(bollos);
+//            }
 
-        for (int i = 0; i < n; i++) {
-            int x = lee.nextInt();
-            vector[i] = x;
-        }
+//            System.out.println(panes < bollos ? panes : bollos);
 
-        for (int i = 0; i < n; i++) {
-            System.out.println(vector[i]);
+            System.out.println(Math.min(panes, bollos));
         }
     }
 }
